@@ -34,6 +34,9 @@ A *Markdown* text box which describes what you learned from the assignment. Plea
 - [The Python Language Reference](https://docs.python.org/3/reference/index.html)
 - [Jupyter Physical Science Lab](https://github.com/orgs/JupyterPhysSciLab/repositories)
 - [Python Plotly Express](https://plotly.com/python/plotly-express/)
+- [Plotly python library](https://plotly.com/python/)
+- [Jupyter Physical Science Lab](https://github.com/orgs/JupyterPhysSciLab/repositories)
+
 
 ## JupyterLab Notes
 1. Do **NOT** use the folder *ipynb_checkpoints*, this is an administrative folder which tracks changes to the individual notebooks. Don't delete it, don't use it. 
@@ -41,3 +44,15 @@ A *Markdown* text box which describes what you learned from the assignment. Plea
 1. As a corollary to #2, check your cell numbering. When you have finished, the cell numbers need to be sequential from top to bottom, starting with 1. If not, either sequential nor starting with 1, click on the double-arrows. 
 3. Remember *JupyterLab* is designed to create lab notebooks which are easy to follow and re-create similar experiments. Be liberal with your comments in *Markdown* along with your coding cells. Having all of your code in one cell is an extremely bad practice.
 4. Review [*Ex-Average-Calc*](Ex-Average-Calc/) to see an example notebook which follows the prescribed format correctly.
+
+
+## Example Physics Labs
+
+- [Physics Calculations and Use of Spreadsheets](https://docs.google.com/document/d/1BORHZHp9vZx8VRpsASbxAk6wUJTaDzGujFN3lA310oQ/edit?usp=sharing), simple calculations, graphing tabular data, graphing a function
+
+- [Physical Measurements & Error Analysis](https://docs.google.com/document/d/1sa4lpI5kSxpxDpPUolyCu62tIIh2jlwC5H5JW26uh7Y/edit?usp=sharing), simple calculations, mean and stdev
+
+- [Accelerated Motion in 1-Dimension](https://docs.google.com/document/d/1UI_NVD_b9sYbQM7GLs_zIqasroRZSweN0DmHiOZeG7A/edit?usp=drive_link), using [this google sheet](http://tinyurl.com/p3a-acceleration), users input position data, calculate and graph velocity vs time, and extract slopes to measure acceleration
+ 
+- [Hooke’s Law & Centripetal Force](https://docs.google.com/document/d/12Q72c0yv2VCq9q-nX88rzoLTGM2wACBiXR3dopmnfD4/edit?usp=sharing) Part A: calculations and graphing of tabular input data, linear fit to determine slope. Part B: tabular calculations (variety of functions)
+
