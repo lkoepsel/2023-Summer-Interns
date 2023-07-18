@@ -8,3 +8,13 @@ This lab will be completed in a JuypterLab notebook with all calculations being 
 * [Accelerated Motion - Tracker](https://www.youtube.com/watch?v=PSRaSouIm6M)
 * [Accelerated Motion Data with Graphs](https://www.youtube.com/watch?v=tKaLO0VD7wA)
 
+
+## Hints on Reading Data
+The four *csv* files contain the data for the 4 runs mentioned in the second video. **You do not need to use the Google sheets referenced file.**
+If you have issues with the header file showing up as data, use the following command:
+```python
+import pandas as pd
+import plotly.express as px
+df = pd.read_csv("Accelerated Motion DATA - run 02.csv", header=1)
+display(df)
+```
