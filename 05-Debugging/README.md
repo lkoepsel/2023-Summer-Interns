@@ -65,3 +65,12 @@ import statistics
 print(statistics.stdev(alist))
 1.2909944487358056
 ```
+
+### Print(list(range())) to show range execution
+At times, Python's function *range()* might not do what is expected. For example, *range()* might not loop at all if provided with an *increment* which is negative and *stop* is positive. It is helpful to review the specific [cases of *range()*](https://docs.python.org/3/library/stdtypes.html#ranges) to better understand how *range()* works.
+
+That said, a great way to debug *range()* in your code is the following:
+```python
+print(f"{list(range(start, stop, increment))}")
+```
+Using this command with the appropriate values for *start*, *stop* and *increment* will provide you a list of the values over which the *range()* function will iterate over.
