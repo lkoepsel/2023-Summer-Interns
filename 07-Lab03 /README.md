@@ -25,3 +25,6 @@ For your analysis, it is important to remove or not consider the bad data as par
 
 ## Referencing the Data
 Be sure to use the complete header name when referring to a specific column of data. For example, the name of the first column is not *"t"* it is *"t (s)"* and so on.
+
+## Tables in Lab
+Any table in the lab, need to be created using Python, not Markdown. The calculations must be dynamic so that if the data changes, the table values change. Make sure there are appropriate headings per the lab guidance as well (using Python).
