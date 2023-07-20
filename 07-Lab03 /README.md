@@ -28,3 +28,5 @@ Be sure to use the complete header name when referring to a specific column of d
 
 ## Tables in Lab
 Any table in the lab, need to be created using Python, not Markdown. The calculations must be dynamic so that if the data changes, the table values change. Make sure there are appropriate headings per the lab guidance as well (using Python).
+
+
