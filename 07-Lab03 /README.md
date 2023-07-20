@@ -39,5 +39,11 @@ display(df[29:240])
 fig = px.scatter(df[29:240], x="t (s)", y="v_{x} (m/s)", trendline="ols")
 fig.show()
 ```
-4. More than likely the trendline will sit "on-top" of your scatter diagram. Which means we will want to look at the trendline statistics.
+4. More than likely the trendline will sit "on-top" of your scatter diagram. Which means we will want to look at the trendline statistics. The equation for a line on a graph is *y = mx +b* where m is the slope of the line and b is the y-intercept. In our case, we can print these two coefficients using the following:
+```python
+results = px.get_trendline_results(fig)
+results = results.iloc[0]["px_fit_results"].params
+print(results)
+```
+When you print the results, you will have two numbers, the first number if *b* or the *y-intercept* and the second is *m*, the *slope of the line*. The slope will also be equal to *a = g(h/100)*, for which you will want to solve for *g* to determine your experimental gravity.
 
