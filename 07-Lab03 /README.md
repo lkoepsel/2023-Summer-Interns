@@ -32,10 +32,14 @@ Any table in the lab, need to be created using Python, not Markdown. The calcula
 ## Determining Trendline for Plots
 https://stackoverflow.com/questions/63341840/plotly-how-to-find-coefficient-of-trendline-in-plotly-express
 1. Install `statsmodels` using the following command: `conda install -c conda-forge statsmodels`
-2. To you scatter plot add the following parameter: `trendline="ols"` **AND** add `import statsmodels` at the top of your notebook. Doing so will add a trendline to your scatterplot. Remember you will need to use only your good values, don't include the bad data as mentioned above.
-3. To view all of the data, use `pd.set_option('display.max_rows', None)` in the cell prior to `display(df)`. Determine where the data changes To use only the good values, then use the *Python* slice technique, `[start:stop]` as in:
+2. To get a trendline in the scatter plot, add `import statsmodels` at the top of your notebook **AND** add the following parameter: `trendline="ols"` to your scatter plot command.
+3. Remember you will need to use only your good values, don't include the bad data as mentioned above. The process to do separate the data is this:
 ```python
+pd.set_option('display.max_rows', None)
+display(df)
+#. Determine where the data changes
 display(df[29:240])
+# then plot using
 fig = px.scatter(df[29:240], x="t (s)", y="v_{x} (m/s)", trendline="ols")
 fig.show()
 ```
@@ -46,4 +50,3 @@ results = results.iloc[0]["px_fit_results"].params
 print(results)
 ```
 When you print the results, you will have two numbers, the first number if *b* or the *y-intercept* and the second is *m*, the *slope of the line*. The slope will also be equal to *a = g(h/100)*, for which you will want to solve for *g* to determine your experimental gravity.
-
