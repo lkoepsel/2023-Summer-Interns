@@ -29,4 +29,15 @@ Be sure to use the complete header name when referring to a specific column of d
 ## Tables in Lab
 Any table in the lab, need to be created using Python, not Markdown. The calculations must be dynamic so that if the data changes, the table values change. Make sure there are appropriate headings per the lab guidance as well (using Python).
 
+## Determining Trendline for Plots
+https://stackoverflow.com/questions/63341840/plotly-how-to-find-coefficient-of-trendline-in-plotly-express
+1. Install `statsmodels` using the following command: `conda install -c conda-forge statsmodels`
+2. To you scatter plot add the following parameter: `trendline="ols"` **AND** add `import statsmodels` at the top of your notebook. Doing so will add a trendline to your scatterplot. Remember you will need to use only your good values, don't include the bad data as mentioned above.
+3. To use only the good values, use the *Pythong* slice technique, `[start:stop]` as in:
+```python
+display(df[29:240])
+fig = px.scatter(df[29:240], x="t (s)", y="v_{x} (m/s)", trendline="ols")
+fig.show()
+```
+4. More than likely the trendline will sit "on-top" of your scatter diagram. Which means we will want to look at the trendline statistics.
 
